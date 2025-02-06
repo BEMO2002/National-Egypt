@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="assets/icons/testimonials/pray3.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/input.css">
+</head>
+
+<body class="what bg-[#ffffff5c]">
+    <div class="flex h-screen"> 
+        <!-- Sidebar -->
+        <nav class="bg-[#eeee] fixed w-[250px] left-0 top-0 h-screen shadow-2xl transition-all duration-300 z-20 flex flex-col">
+            <!-- Logo -->
+            <div class="px-12 flex flex-col h-full mt-7">
+                <div class="flex items-center justify-center w-full mb-5 mt-2">
+                    <span class="mx-4 text-3xl lg:text-2xl font-bold text-[#000]">Dashboard</span>
+                </div>
+                <!-- Navigation List -->
+                <ul class="flex flex-col mt-4 space-y-14">
+                    <li class="flex items-center">
+                        <i class="ri-home-4-line text-xl"></i>
+                        <a href="#" class="text-lg ml-4">Home</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="ri-shopping-bag-4-line text-xl"></i>
+                        <a href="#" class="text-lg ml-3">Products</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="ri-user-line text-xl"></i>
+                        <a href="#" class="text-lg ml-5">Users</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="ri-percent-line text-xl"></i>
+                        <a href="#" class="text-lg ml-3">Discounts</a>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="ri-settings-2-line text-xl"></i>
+                        <a href="#" class="text-lg ml-3">Configuration</a>
+                    </li>
+                </ul>
+                <!-- Bottom Section -->
+                <ul class="absolute bottom-0 mb-4 text-center flex justify-center ">
+                    <li class="flex items-center space-x-3">
+                        <i class="ri-search-line text-xl"></i>
+                        <a href="#" class="text-lg ml-3">Search</a>
+                        <p class="p-1 border border-[#000]">Ctrl + K</p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- Main Content -->
+        <main class="flex-1 ml-[250px] p-6"> <!-- تأكد من أن المحتوى يبدأ بعد الـ sidebar -->
+            <!-- Section Title -->
+            <section class="pt-10 pb-10">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h3 class="font-bold">products > All Products</h3>
+                    </div>
+                    <div class="flex items-center space-x-7">
+                        <i class="ri-settings-2-fill text-xl border-2 border-[#ccc] p-1 rounded-md"></i>
+                        <button class="bg-black px-4 py-3 rounded-lg text-white">Create product</button>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Table Section -->
+            <section class="overflow-x-auto">
+                <table class="w-full bg-white border border-gray-300 shadow-lg rounded-lg">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="px-6 py-3 border">Image</th>
+                            <th class="px-6 py-3 border">Name</th>
+                            <th class="px-6 py-3 border">Type</th>
+                            <th class="px-6 py-3 border">Description</th>
+                            <th class="px-6 py-3 border">Price</th>
+                            <th class="px-6 py-3 border">ID</th>
+                            <th class="px-6 py-3 border">Created At</th>
+                            <th class="px-6 py-3 border">Updated At</th>
+                            <th class="px-6 py-3 border">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="text-center border-b">
+                            <td class="px-6 py-4 border">
+                                <img src="assets/heg/4.jpg" alt="Product" class="w-14 h-14  mx-auto">
+                            </td>
+                        <td class="px-6 py-4 border">Product Name</td>
+                        <td class="px-6 py-4 border">Electronics</td>
+                        <td class="px-6 py-4 border">This is a sample product description.</td>
+                        <td class="px-6 py-4 border">$199.99</td>
+                        <td class="px-6 py-4 border">12345</td>
+                        <td class="px-6 py-4 border">2024-01-01</td>
+                        <td class="px-6 py-4 border">2024-02-01</td>
+                        <td class="px-6 py-4 border space-x-3">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">View</button>
+                            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Edit</button>
+                            <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="text-center border-b">
+                            <td class="px-6 py-4 border">
+                                <img src="assets/heg/4.jpg" alt="Product" class="w-14 h-14  mx-auto">
+                            </td>
+                        <td class="px-6 py-4 border">Product Name</td>
+                        <td class="px-6 py-4 border">Electronics</td>
+                        <td class="px-6 py-4 border">This is a sample product description.</td>
+                        <td class="px-6 py-4 border">$199.99</td>
+                        <td class="px-6 py-4 border">12345</td>
+                        <td class="px-6 py-4 border">2024-01-01</td>
+                        <td class="px-6 py-4 border">2024-02-01</td>
+                        <td class="px-6 py-4 border space-x-3">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">View</button>
+                            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Edit</button>
+                            <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="text-center border-b">
+                            <td class="px-6 py-4 border">
+                                <img src="assets/heg/4.jpg" alt="Product" class="w-14 h-14  mx-auto">
+                            </td>
+                        <td class="px-6 py-4 border">Product Name</td>
+                        <td class="px-6 py-4 border">Electronics</td>
+                        <td class="px-6 py-4 border">This is a sample product description.</td>
+                        <td class="px-6 py-4 border">$199.99</td>
+                        <td class="px-6 py-4 border">12345</td>
+                        <td class="px-6 py-4 border">2024-01-01</td>
+                        <td class="px-6 py-4 border">2024-02-01</td>
+                        <td class="px-6 py-4 border space-x-3">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">View</button>
+                            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Edit</button>
+                            <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="text-center border-b">
+                            <td class="px-6 py-4 border">
+                                <img src="assets/heg/4.jpg" alt="Product" class="w-14 h-14  mx-auto">
+                            </td>
+                        <td class="px-6 py-4 border">Product Name</td>
+                        <td class="px-6 py-4 border">Electronics</td>
+                        <td class="px-6 py-4 border">This is a sample product description.</td>
+                        <td class="px-6 py-4 border">$199.99</td>
+                        <td class="px-6 py-4 border">12345</td>
+                        <td class="px-6 py-4 border">2024-01-01</td>
+                        <td class="px-6 py-4 border">2024-02-01</td>
+                        <td class="px-6 py-4 border space-x-3">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">View</button>
+                            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Edit</button>
+                            <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="text-center border-b">
+                            <td class="px-6 py-4 border">
+                                <img src="assets/heg/4.jpg" alt="Product" class="w-14 h-14  mx-auto">
+                            </td>
+                        <td class="px-6 py-4 border">Product Name</td>
+                        <td class="px-6 py-4 border">Electronics</td>
+                        <td class="px-6 py-4 border">This is a sample product description.</td>
+                        <td class="px-6 py-4 border">$199.99</td>
+                        <td class="px-6 py-4 border">12345</td>
+                        <td class="px-6 py-4 border">2024-01-01</td>
+                        <td class="px-6 py-4 border">2024-02-01</td>
+                        <td class="px-6 py-4 border space-x-3">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">View</button>
+                            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Edit</button>
+                            <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</div>
+    <!-- start table  -->
+    <!-- end table  -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
