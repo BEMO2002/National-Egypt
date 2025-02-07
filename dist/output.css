@@ -1022,6 +1022,14 @@ video {
   gap: 1.75rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
@@ -1328,6 +1336,47 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#00000091\] {
+  background-color: #00000091;
+}
+
+.bg-\[\#000000a6\] {
+  background-color: #000000a6;
+}
+
+.bg-\[\#000000be\] {
+  background-color: #000000be;
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#ccc\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 204 204 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ffff\] {
+  background-color: #ffff;
+}
+
+.bg-\[\#\] {
+  background-color: #;
+}
+
+.bg-\[\#cccccce3\] {
+  background-color: #cccccce3;
+}
+
+.bg-\[\#ccccccb7\] {
+  background-color: #ccccccb7;
+}
+
+.bg-\[\#cccccc7d\] {
+  background-color: #cccccc7d;
+}
+
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
 }
@@ -1387,6 +1436,10 @@ video {
 
 .p-\[17px\] {
   padding: 17px;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-12 {
@@ -1944,6 +1997,11 @@ body{
 .before\:right-\[-95px\]::before {
   content: var(--tw-content);
   right: -95px;
+}
+
+.before\:right-\[-7px\]::before {
+  content: var(--tw-content);
+  right: -7px;
 }
 
 .before\:w-\[350px\]::before {
