@@ -616,10 +616,6 @@ video {
   bottom: -150px;
 }
 
-.bottom-\[11\%\] {
-  bottom: 11%;
-}
-
 .bottom-\[15\%\] {
   bottom: 15%;
 }
@@ -1018,16 +1014,12 @@ video {
   justify-content: space-around;
 }
 
-.gap-7 {
-  gap: 1.75rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
 }
 
 .gap-x-10 {
@@ -1238,8 +1230,8 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-\[\#0000006b\] {
-  background-color: #0000006b;
+.bg-\[\#000000be\] {
+  background-color: #000000be;
 }
 
 .bg-\[\#075e54\] {
@@ -1257,8 +1249,8 @@ video {
   background-color: rgb(86 90 93 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#cccccccf\] {
-  background-color: #cccccccf;
+.bg-\[\#cccccc7d\] {
+  background-color: #cccccc7d;
 }
 
 .bg-\[\#eeee\] {
@@ -1279,13 +1271,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#ffffff5c\] {
-  background-color: #ffffff5c;
+.bg-\[\#ffff\] {
+  background-color: #ffff;
 }
 
-.bg-\[\#ffffff\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.bg-\[\#ffffff5c\] {
+  background-color: #ffffff5c;
 }
 
 .bg-\[\#ffffffc6\] {
@@ -1334,47 +1325,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#00000091\] {
-  background-color: #00000091;
-}
-
-.bg-\[\#000000a6\] {
-  background-color: #000000a6;
-}
-
-.bg-\[\#000000be\] {
-  background-color: #000000be;
-}
-
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[\#ccc\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(204 204 204 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#ffff\] {
-  background-color: #ffff;
-}
-
-.bg-\[\#\] {
-  background-color: #;
-}
-
-.bg-\[\#cccccce3\] {
-  background-color: #cccccce3;
-}
-
-.bg-\[\#ccccccb7\] {
-  background-color: #ccccccb7;
-}
-
-.bg-\[\#cccccc7d\] {
-  background-color: #cccccc7d;
 }
 
 .bg-opacity-30 {
@@ -1436,10 +1386,6 @@ video {
 
 .p-\[17px\] {
   padding: 17px;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .px-12 {
@@ -1543,10 +1489,6 @@ video {
 
 .pl-\[180px\] {
   padding-left: 180px;
-}
-
-.pl-\[px\] {
-  padding-left: px;
 }
 
 .pr-\[30px\] {
@@ -1999,11 +1941,6 @@ body{
   right: -95px;
 }
 
-.before\:right-\[-7px\]::before {
-  content: var(--tw-content);
-  right: -7px;
-}
-
 .before\:w-\[350px\]::before {
   content: var(--tw-content);
   width: 350px;
@@ -2098,10 +2035,6 @@ body{
 
   .lg\:flex {
     display: flex;
-  }
-
-  .lg\:hidden {
-    display: none;
   }
 
   .lg\:h-\[500px\] {
