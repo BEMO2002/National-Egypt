@@ -951,6 +951,10 @@ video {
   width: 100%;
 }
 
+.w-\[260px\] {
+  width: 260px;
+}
+
 .max-w-\[750px\] {
   max-width: 750px;
 }
@@ -1098,6 +1102,18 @@ video {
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-16 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(4rem * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1200,6 +1216,10 @@ video {
   border-top-width: 2px;
 }
 
+.border-r-2 {
+  border-right-width: 2px;
+}
+
 .border-\[\#000\] {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -1230,6 +1250,22 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-\[\] {
+  border-color: ;
+}
+
+.border-\[\#\] {
+  border-color: #;
+}
+
+.border-\[\#00000091\] {
+  border-color: #00000091;
+}
+
+.border-\[\#00000055\] {
+  border-color: #00000055;
+}
+
 .bg-\[\#000000be\] {
   background-color: #000000be;
 }
@@ -1251,6 +1287,10 @@ video {
 
 .bg-\[\#cccccc7d\] {
   background-color: #cccccc7d;
+}
+
+.bg-\[\#ccccccab\] {
+  background-color: #ccccccab;
 }
 
 .bg-\[\#eeee\] {
