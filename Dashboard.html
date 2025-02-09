@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -19,177 +19,180 @@
     <link rel="stylesheet" href="css/input.css">
 </head>
 
-<body class="what bg-[#ffffff5c]">
-    <div class="flex h-screen "> 
-        <!-- Sidebar -->
-        <nav class="bg-[#eeee] fixed w-[260px] left-0 top-0 h-screen shadow-2xl transition-all duration-300 z-20 flex flex-col items-center justify-center">
-            <!-- Logo -->
-            <div class="px-12 flex flex-col h-full mt-7">
-                <div class="flex items-center justify-center w-full mb-5 mt-2">
-                    <span class="mx-4 text-3xl lg:text-2xl font-bold text-[#000]">Dashboard</span>
+<body class="bg-gray-50">
+    <header >
+        <div class="lg:container mx-auto">
+            <!-- mobile nav -->
+            <nav class="view bg-[#eee] fixed w-[300px] left-0 top-0 h-screen  shadow-2xl  transition-all duration-300 z-20">
+                <div
+                    class="close-btn bg-[#000] w-10 h-10  relative left-10 bottom-[-110px] flex justify-center items-center rounded-tr-lg rounded-br-lg cursor-pointer transition-all">
+                    <i class=" close-btn-icon ri-menu-line text-2xl text-white"></i>
                 </div>
-                <!-- Navigation List -->
-                <ul class="flex flex-col mt-7 space-y-14 items-center ">
-                    <li class="flex items-center">
-                        <i class="ri-home-4-line text-xl"></i>
-                        <a href="#" class="text-lg ml-4">Home</a>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="ri-shopping-bag-4-line text-xl"></i>
-                        <a href="#" class="text-lg ml-3">Products</a>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="ri-user-line text-xl"></i>
-                        <a href="#" class="text-lg ml-5">Users</a>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="ri-percent-line text-xl"></i>
-                        <a href="#" class="text-lg ml-3">Discounts</a>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="ri-settings-2-line text-xl"></i>
-                        <a href="#" class="text-lg ml-3">Configuration</a>
-                    </li>
-                </ul>
+                <!-- logo -->
+                <div class="px-12  flex flex-col g-y-12 h-full">
+                    <div class="flex items-center justify-center w-full mb-5 mt-2">
+                        <span class="mx-4 text-3xl lg:text-2xl font-bold text-[#000]">Dashboard</span>
+                    </div>
+                    <!-- list -->
+                    <ul class=" flex flex-col justify-center items-center gap-y-20  pt-20 font-semibold">
+                        <li class="flex items-center">
+                            <a href="#" class="text-lg ml-4">Home</a>
+                            <i class="ri-home-4-line text-xl"></i>
+                        </li>
+                        <li class="flex items-center">
+                            <a href="#" class="text-lg ml-3">Products</a>
+                            <i class="ri-shopping-bag-4-line text-xl"></i>
+                        </li>
+                        <li class="flex items-center">
+                            <a href="#" class="text-lg ml-5">Users</a>
+                            <i class="ri-user-line text-xl"></i>
+                        </li>
+                        <li class="flex items-center">
+                            <a href="#" class="text-lg ml-3">Discounts</a>
+                            <i class="ri-percent-line text-xl"></i>
+                        </li>
+                        <li class="flex items-center">
+                            <a href="#" class="text-lg ml-3">Configuration</a>
+                            <i class="ri-settings-2-line text-xl"></i>
+                        </li>
+                    </ul>
                 <!-- Bottom Section -->
-                <ul class="absolute bottom-0 mb-4 text-center flex justify-center ">
+                <ul class="absolute bottom-0 mb-4  flex justify-center ">
                     <li class="flex items-center space-x-3">
-                        <i class="ri-search-line text-xl"></i>
+                        <p class="p-1 border border-[#000] ml-5">Ctrl + K</p>
                         <a href="#" class="text-lg ml-3">Search</a>
-                        <p class="p-1 border border-[#000]">Ctrl + K</p>
+                        <i class="ri-search-line text-xl"></i>
                     </li>
                 </ul>
-            </div>
-        </nav>
-    
-        <!-- Main Content -->
-        <main class="flex-1 ml-[250px] p-6"> 
-            <!-- Section Title -->
-            <section class="pt-10 pb-10">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <h3 class="font-bold">products > All Products</h3>
-                    </div>
-                    <div class="flex items-center space-x-7">
-                        <i class="ri-settings-2-fill text-xl border-2 border-[#ccc] p-1 rounded-md"></i>
-                        <button class="bg-black px-4 py-3 rounded-lg text-white">Create product</button>
-                    </div>
                 </div>
-            </section>
-    
-            <!-- Table Section -->
-            <section class="overflow-x-auto">
-                <table class="w-full bg-white border border-gray-300 shadow-lg rounded-lg">
-                    <thead class="bg-gray-200">
-                        <tr class="">
-                            <th class="px-6 py-3 border">Image</th>
-                            <th class="px-6 py-3 border">Name</th>
-                            <th class="px-6 py-3 border">Type</th>
-                            <th class="px-6 py-3 border">Description</th>
-                            <th class="px-6 py-3 border">Price</th>
-                            <th class="px-6 py-3 border">ID</th>
-                            <th class="px-6 py-3 border">Created At</th>
-                            <th class="px-6 py-3 border">Updated At</th>
-                            <th class="px-6 py-3 border">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="text-center border-b-2">
-                            <td class="px-6 py-4 border-2">
-                                <img src="assets/heg/4.jpg" alt="Product" class="w-14 h-14  mx-auto">
-                            </td>
-                        <td class="px-6 py-4 border-2">Product Name</td>
-                        <td class="px-6 py-4 border-2">Electronics</td>
-                        <td class="px-6 py-4 border-2">This is a sample product description.</td>
-                        <td class="px-6 py-4 border-2">$199.99</td>
-                        <td class="px-6 py-4 border-2">12345</td>
-                        <td class="px-6 py-4 border-2">2024-01-01 <br> 5pm</td>
-                        <td class="px-6 py-4 border-2">2024-02-01 <br> 06:5Am</td>
-                        <td class="px-6 py-4 border-2 space-x-3">
-                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">View <i class="ri-eye-fill"></i></button>
-                            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Edit <i class="ri-edit-2-fill"></i></button>
-                            <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Delete <i class="ri-delete-bin-6-fill"></i></button>
-                        </td>
-                    </tr>
-                    <tr class="text-center border-b-2">
-                            <td class="px-6 py-4 border-2">
-                                <img src="assets/heg/4.jpg" alt="Product" class="w-14 h-14  mx-auto">
-                            </td>
-                        <td class="px-6 py-4 border-2">Product Name</td>
-                        <td class="px-6 py-4 border-2">Electronics</td>
-                        <td class="px-6 py-4 border-2">This is a sample product description.</td>
-                        <td class="px-6 py-4 border-2">$199.99</td>
-                        <td class="px-6 py-4 border-2">12345</td>
-                        <td class="px-6 py-4 border-2">2024-01-01 <br> 5pm</td>
-                        <td class="px-6 py-4 border-2">2024-02-01 <br> 06:5Am</td>
-                        <td class="px-6 py-4 border-2 space-x-3">
-                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">View <i class="ri-eye-fill"></i></button>
-                            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Edit <i class="ri-edit-2-fill"></i></button>
-                            <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Delete <i class="ri-delete-bin-6-fill"></i></button>
-                        </td>
-                    </tr>
-                    <tr class="text-center border-b-2">
-                            <td class="px-6 py-4 border-2">
-                                <img src="assets/heg/4.jpg" alt="Product" class="w-14 h-14  mx-auto">
-                            </td>
-                        <td class="px-6 py-4 border-2">Product Name</td>
-                        <td class="px-6 py-4 border-2">Electronics</td>
-                        <td class="px-6 py-4 border-2">This is a sample product description.</td>
-                        <td class="px-6 py-4 border-2">$199.99</td>
-                        <td class="px-6 py-4 border-2">12345</td>
-                        <td class="px-6 py-4 border-2">2024-01-01 <br> 5pm</td>
-                        <td class="px-6 py-4 border-2">2024-02-01 <br> 06:5Am</td>
-                        <td class="px-6 py-4 border-2 space-x-3">
-                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">View <i class="ri-eye-fill"></i></button>
-                            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Edit <i class="ri-edit-2-fill"></i></button>
-                            <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Delete <i class="ri-delete-bin-6-fill"></i></button>
-                        </td>
-                    </tr>
-                    <tr class="text-center border-b-2">
-                            <td class="px-6 py-4 border-2">
-                                <img src="assets/heg/4.jpg" alt="Product" class="w-14 h-14  mx-auto">
-                            </td>
-                        <td class="px-6 py-4 border-2">Product Name</td>
-                        <td class="px-6 py-4 border-2">Electronics</td>
-                        <td class="px-6 py-4 border-2">This is a sample product description.</td>
-                        <td class="px-6 py-4 border-2">$199.99</td>
-                        <td class="px-6 py-4 border-2">12345</td>
-                        <td class="px-6 py-4 border-2">2024-01-01 <br> 5pm</td>
-                        <td class="px-6 py-4 border-2">2024-02-01 <br> 06:5Am</td>
-                        <td class="px-6 py-4 border-2 space-x-3">
-                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">View <i class="ri-eye-fill"></i></button>
-                            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Edit <i class="ri-edit-2-fill"></i></button>
-                            <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Delete <i class="ri-delete-bin-6-fill"></i></button>
-                        </td>
-                    </tr>
-                    <tr class="text-center border-b-2">
-                            <td class="px-6 py-4 border-2">
-                                <img src="assets/heg/4.jpg" alt="Product" class="w-14 h-14  mx-auto">
-                            </td>
-                        <td class="px-6 py-4 border-2">Product Name</td>
-                        <td class="px-6 py-4 border-2">Electronics</td>
-                        <td class="px-6 py-4 border-2">This is a sample product description.</td>
-                        <td class="px-6 py-4 border-2">$199.99</td>
-                        <td class="px-6 py-4 border-2">12345</td>
-                        <td class="px-6 py-4 border-2">2024-01-01 <br> 5pm</td>
-                        <td class="px-6 py-4 border-2">2024-02-01 <br> 06:5Am</td>
-                        <td class="px-6 py-4 border-2 space-x-3">
-                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">View <i class="ri-eye-fill"></i></button>
-                            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Edit <i class="ri-edit-2-fill"></i></button>
-                            <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Delete <i class="ri-delete-bin-6-fill"></i></button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="p-6"> 
+        <!-- Section Title -->
+        <section class="pt-10 pb-10" dir="ltr">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h3 class="font-bold">products > All Products</h3>
+                </div>
+                <div class="flex items-center space-x-7">
+                    <i class="ri-settings-2-fill text-xl border-2 border-[#ccc] p-1 rounded-md"></i>
+                    <button class="bg-black px-4 py-3 rounded-lg text-white">Create product</button>
+                </div>
+            </div>
         </section>
-    </main>
-</div>
-    <!-- start table  -->
-    <!-- end table  -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/scrollreveal.min.js"></script>
-    <script src="js/main.js"></script>
+
+        <!-- Table Section -->
+        <section class="overflow-x-auto" dir="ltr">
+            <table class="w-full bg-white border border-gray-300 shadow-lg rounded-lg">
+                <thead class="bg-gray-200">
+                    <tr class="">
+                        <th class="px-6 py-3 border">Image</th>
+                        <th class="px-6 py-3 border">Name</th>
+                        <th class="px-6 py-3 border">Type</th>
+                        <th class="px-6 py-3 border">Description</th>
+                        <th class="px-6 py-3 border">Price</th>
+                        <th class="px-6 py-3 border">ID</th>
+                        <th class="px-6 py-3 border">Created At</th>
+                        <th class="px-6 py-3 border">Updated At</th>
+                        <th class="px-6 py-3 border">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr class="text-center border-b-2">
+                        <td class="px-6 py-4 border-2">
+                            <img src="assets/heg/4.jpg" alt="Product" class="w-14 h-14  mx-auto">
+                        </td>
+                    <td class="px-6 py-4 border-2">Product Name</td>
+                    <td class="px-6 py-4 border-2">Electronics</td>
+                    <td class="px-6 py-4 border-2">This is a sample product description.</td>
+                    <td class="px-6 py-4 border-2">$199.99</td>
+                    <td class="px-6 py-4 border-2">12345</td>
+                    <td class="px-6 py-4 border-2">2024-01-01 <br> 5pm</td>
+                    <td class="px-6 py-4 border-2">2024-02-01 <br> 06:5Am</td>
+                    <td class="px-6 py-4 border-2 space-x-3">
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">View <i class="ri-eye-fill"></i></button>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500">Edit <i class="ri-edit-2-fill"></i></button>
+                        <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-500">Delete <i class="ri-delete-bin-6-fill"></i></button>
+                    </td>
+                </tr>
+                <tr class="text-center border-b-2">
+                        <td class="px-6 py-4 border-2">
+                            <img src="assets/heg/4.jpg" alt="Product" class="w-14 h-14  mx-auto">
+                        </td>
+                    <td class="px-6 py-4 border-2">Product Name</td>
+                    <td class="px-6 py-4 border-2">Electronics</td>
+                    <td class="px-6 py-4 border-2">This is a sample product description.</td>
+                    <td class="px-6 py-4 border-2">$199.99</td>
+                    <td class="px-6 py-4 border-2">12345</td>
+                    <td class="px-6 py-4 border-2">2024-01-01 <br> 5pm</td>
+                    <td class="px-6 py-4 border-2">2024-02-01 <br> 06:5Am</td>
+                    <td class="px-6 py-4 border-2 space-x-3">
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">View <i class="ri-eye-fill"></i></button>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500">Edit <i class="ri-edit-2-fill"></i></button>
+                        <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-500">Delete <i class="ri-delete-bin-6-fill"></i></button>
+                    </td>
+                </tr>
+                <tr class="text-center border-b-2">
+                        <td class="px-6 py-4 border-2">
+                            <img src="assets/heg/4.jpg" alt="Product" class="w-14 h-14  mx-auto">
+                        </td>
+                    <td class="px-6 py-4 border-2">Product Name</td>
+                    <td class="px-6 py-4 border-2">Electronics</td>
+                    <td class="px-6 py-4 border-2">This is a sample product description.</td>
+                    <td class="px-6 py-4 border-2">$199.99</td>
+                    <td class="px-6 py-4 border-2">12345</td>
+                    <td class="px-6 py-4 border-2">2024-01-01 <br> 5pm</td>
+                    <td class="px-6 py-4 border-2">2024-02-01 <br> 06:5Am</td>
+                    <td class="px-6 py-4 border-2 space-x-3">
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">View <i class="ri-eye-fill"></i></button>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500">Edit <i class="ri-edit-2-fill"></i></button>
+                        <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-500">Delete <i class="ri-delete-bin-6-fill"></i></button>
+                    </td>
+                </tr>
+                <tr class="text-center border-b-2">
+                        <td class="px-6 py-4 border-2">
+                            <img src="assets/heg/4.jpg" alt="Product" class="w-14 h-14  mx-auto">
+                        </td>
+                    <td class="px-6 py-4 border-2">Product Name</td>
+                    <td class="px-6 py-4 border-2">Electronics</td>
+                    <td class="px-6 py-4 border-2">This is a sample product description.</td>
+                    <td class="px-6 py-4 border-2">$199.99</td>
+                    <td class="px-6 py-4 border-2">12345</td>
+                    <td class="px-6 py-4 border-2">2024-01-01 <br> 5pm</td>
+                    <td class="px-6 py-4 border-2">2024-02-01 <br> 06:5Am</td>
+                    <td class="px-6 py-4 border-2 space-x-3">
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">View <i class="ri-eye-fill"></i></button>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500">Edit <i class="ri-edit-2-fill"></i></button>
+                        <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-500">Delete <i class="ri-delete-bin-6-fill"></i></button>
+                    </td>
+                </tr>
+                <tr class="text-center border-b-2">
+                        <td class="px-6 py-4 border-2">
+                            <img src="assets/heg/4.jpg" alt="Product" class="w-14 h-14  mx-auto">
+                        </td>
+                    <td class="px-6 py-4 border-2">Product Name</td>
+                    <td class="px-6 py-4 border-2">Electronics</td>
+                    <td class="px-6 py-4 border-2">This is a sample product description.</td>
+                    <td class="px-6 py-4 border-2">$199.99</td>
+                    <td class="px-6 py-4 border-2">12345</td>
+                    <td class="px-6 py-4 border-2">2024-01-01 <br> 5pm</td>
+                    <td class="px-6 py-4 border-2">2024-02-01 <br> 06:5Am</td>
+                    <td class="px-6 py-4 border-2 space-x-3">
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">View <i class="ri-eye-fill"></i></button>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500">Edit <i class="ri-edit-2-fill"></i></button>
+                        <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-500">Delete <i class="ri-delete-bin-6-fill"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/scrollreveal.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
