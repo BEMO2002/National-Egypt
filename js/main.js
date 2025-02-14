@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             Toast.fire({
                 icon: "success",
-                title: "The reservation has succeeded."
+                title: "The book succeeded."
             });
             form.reset();
         }
