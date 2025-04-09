@@ -94,7 +94,12 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             Toast.fire({
                 icon: "success",
-                title: "The book succeeded."
+                title: "تم تاكيد الحجز بنجاح  ✔  ",
+                iconColor: "#D19E52",
+                customClass: {
+                    title: "text-2xl font-bold text-[#000]",
+                },
+
             });
             form.reset();
         }
